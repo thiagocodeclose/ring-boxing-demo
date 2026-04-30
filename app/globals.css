@@ -1,0 +1,21 @@
+:root {
+  --crimson: #DC143C;
+  --cream:   #F5E6C8;
+  --bg:      #1A1A1A;
+  --surface: #222222;
+  --text:    #F0ECE0;
+  --muted:   #7A7068;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { background: var(--bg); color: var(--text); }
+
+/* Reveal animations */
+.reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* Vintage texture overlay */
+.vintage-overlay {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4'%3E%3Crect width='4' height='4' fill='transparent'/%3E%3Ccircle cx='1' cy='1' r='0.5' fill='rgba(245,230,200,0.04)'/%3E%3C/svg%3E");
+}
