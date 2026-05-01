@@ -4,6 +4,7 @@ import { Bebas_Neue, Barlow } from 'next/font/google';
 import { getKorivaConfig, buildCssVars } from '@/lib/koriva-config';
 import './globals.css';
 
+import { KorivaLivePreview } from '@/components/KorivaLivePreview';
 const heading = Bebas_Neue({ subsets: ['latin'], weight: ['400'], variable: '--font-heading' });
 const body    = Barlow({ subsets: ['latin'], weight: ['400', '500', '600'], variable: '--font-body' });
 
@@ -23,6 +24,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
     <html lang="en" style={vars as React.CSSProperties}>
       <body className={`${heading.variable} ${body.variable} bg-rg-bg text-rg-text antialiased vintage-overlay`}>
         {children}
+        <KorivaLivePreview />
       </body>
     </html>
   );
