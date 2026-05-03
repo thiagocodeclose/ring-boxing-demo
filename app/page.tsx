@@ -99,7 +99,7 @@ function Hero() {
             <span className="text-rg-cream font-body font-semibold text-xs uppercase tracking-[0.3em]">Est. 1987 · Philadelphia, PA</span>
           </div>
 
-          <h1 className="font-heading text-8xl sm:text-9xl lg:text-[120px] text-white leading-none mb-4">
+          <h1 data-cg-el="hero_headline_1" className="font-heading text-8xl sm:text-9xl lg:text-[120px] text-white leading-none mb-4">
             THE<br />
             <span className="text-rg-crimson">RING</span>
           </h1>
