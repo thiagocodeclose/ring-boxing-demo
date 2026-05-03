@@ -96,7 +96,7 @@ function Hero() {
           {/* Heritage banner */}
           <div className="inline-flex items-center gap-2 border border-rg-crimson/50 px-4 py-1.5 mb-8">
             <div className="w-1.5 h-1.5 bg-rg-crimson rounded-full" />
-            <span className="text-rg-cream font-body font-semibold text-xs uppercase tracking-[0.3em]">Est. 1987 · Philadelphia, PA</span>
+            <span data-cg-el="hero_eyebrow" className="text-rg-cream font-body font-semibold text-xs uppercase tracking-[0.3em]">Est. 1987 · Philadelphia, PA</span>
           </div>
 
           <h1 data-cg-el="hero_headline_1" className="font-heading text-8xl sm:text-9xl lg:text-[120px] text-white leading-none mb-4">
@@ -104,14 +104,14 @@ function Hero() {
             <span className="text-rg-crimson">RING</span>
           </h1>
 
-          <p className="text-rg-muted text-lg mb-4 font-body font-semibold uppercase tracking-widest">Old School. No Excuses.</p>
+          <p data-cg-el="hero_subtitle" className="text-rg-muted text-lg mb-4 font-body font-semibold uppercase tracking-widest">Old School. No Excuses.</p>
           <p className="text-rg-muted leading-relaxed mb-8 max-w-lg font-body">{studioInfo.subheadline}</p>
 
           <div className="flex flex-wrap gap-3">
-            <a href="#contact" className="inline-flex items-center gap-2 bg-rg-crimson hover:bg-[#B01030] text-white font-body font-semibold text-sm uppercase tracking-widest px-8 py-4 transition-colors">
+            <a data-cg-el="hero_cta_primary" href="#contact" className="inline-flex items-center gap-2 bg-rg-crimson hover:bg-[#B01030] text-white font-body font-semibold text-sm uppercase tracking-widest px-8 py-4 transition-colors">
               Free Trial Class <ArrowRight size={15} />
             </a>
-            <a href="#heritage" className="inline-flex items-center gap-2 border border-[#444] hover:border-rg-cream text-rg-cream font-body font-semibold text-sm uppercase tracking-widest px-8 py-4 transition-colors">
+            <a data-cg-el="hero_cta_secondary" href="#heritage" className="inline-flex items-center gap-2 border border-[#444] hover:border-rg-cream text-rg-cream font-body font-semibold text-sm uppercase tracking-widest px-8 py-4 transition-colors">
               Our Heritage
             </a>
           </div>
